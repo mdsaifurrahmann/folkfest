@@ -38,3 +38,8 @@ header{
     }
     
 }
+
+/* Common CSS */
+.section-title{
+    @apply text-primary;
+}
