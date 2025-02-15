@@ -47,3 +47,15 @@ header{
 .btn-1{
     @apply bg-primary text-[15px] rounded-lg py-2 px-4;
 }
+
+
+/* SECTION JOIN US */
+.join-us{
+    @apply absolute left-0 -top-20 w-full;
+    .title{
+        @apply text-[32px];
+    }
+    .card{
+        @apply bg-primary h-[346px] text-xl p-4 rounded-lg w-full flex flex-col justify-between;
+    }
+}
