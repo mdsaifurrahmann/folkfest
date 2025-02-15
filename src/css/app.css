@@ -43,3 +43,7 @@ header{
 .section-title{
     @apply text-center text-3xl mb-8;
 }
+
+.btn-1{
+    @apply bg-primary text-[15px] rounded-lg py-2 px-4;
+}
