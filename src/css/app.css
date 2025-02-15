@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import "tailwindcss";
+@import "./hamburger.css";
+
+@theme{
+    --font-aboreto: 'Aboreto', sans-serif;
+    --color-primary: #FFC603;
+    --color-secondary: #FF0000;
+}
+
+.container{
+    @apply mx-auto;
+}
+
+body{
+    @apply font-aboreto;
+}
+
+header{
+    nav{
+        @apply lg:bg-primary w-full rounded-md block lg:flex justify-center flex-row items-center gap-5;
+
+        .nav-item{
+            @apply bg-primary rounded-md lg:rounded-none lg:bg-none opacity-0 lg:opacity-100 relative -top-[100vh] lg:-top-0 text-center lg:text-inherit lg:!flex my-1 lg:my-0 transition-all lg:transition-none duration-700;
+        }
+
+        .nav-item.opacity-100{
+            @apply !opacity-100 lg:opacity-100 !-top-0 lg:-top-0;
+        }
+
+        .nav-link{
+            @apply uppercase rounded-md lg:rounded-none py-4 px-2 block transition-all duration-200;
+
+            &:hover{
+                @apply bg-secondary text-white;
+            }
+        }
+    }
+    
+}
