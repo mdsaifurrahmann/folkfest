@@ -6,10 +6,16 @@
     --font-aboreto: 'Aboreto', sans-serif;
     --color-primary: #FFC603;
     --color-secondary: #FF0000;
+    --color-offwhite: #F8F8F8;
 }
 
 .container{
     @apply mx-auto;
+}
+
+.feather {
+    width: 30px;
+    height: 30px;
 }
 
 body{
@@ -41,11 +47,11 @@ header{
 
 /* Common CSS */
 .section-title{
-    @apply text-center text-3xl mb-8;
+    @apply text-center text-[2.5rem] mb-8;
 }
 
 .btn-1{
-    @apply bg-primary text-[15px] rounded-lg py-2 px-4;
+    @apply bg-primary text-[15px] rounded-lg py-2 px-6;
 }
 
 
@@ -53,9 +59,17 @@ header{
 .join-us{
     @apply absolute left-0 -top-20 w-full;
     .title{
-        @apply text-[32px];
+        @apply text-center text-[28px];
     }
     .card{
-        @apply bg-primary h-[346px] text-xl p-4 rounded-lg w-full flex flex-col justify-between;
+        @apply bg-primary h-[290px] text-xl p-6 rounded-lg w-full flex flex-col justify-between;
     }
+}
+
+footer{
+        background: rgb(255, 198, 3);
+            background: -moz-linear-gradient(0deg, rgba(255, 198, 3, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(255, 198, 3, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: linear-gradient(0deg, rgba(255, 198, 3, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc603", endColorstr="#ffffff", GradientType=1);
 }
