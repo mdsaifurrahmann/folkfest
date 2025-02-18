@@ -47,7 +47,7 @@ header{
 
 /* Common CSS */
 .section-title{
-    @apply text-center text-2xl lg:text-[2.5rem] mb-8;
+    @apply text-center text-[2.5rem] mb-8;
 }
 
 .btn-1{
