@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         menuItems.forEach(function (item) {
             if (menu.classList.contains('!opened')) {
-                item.classList.toggle('opacity-100');
+                item.classList.toggle('open');
                 item.setAttribute('tabindex', '0');
-            } else {
-                item.classList.toggle('opacity-100');
+            }
+
+            if (!menu.classList.contains('!opened')) {
+                item.classList.toggle('open');
                 item.setAttribute('tabindex', '-1');
             }
         });
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Set the target date to July 26, 2025 at 00:00:00
-    const targetDate = new Date(2025, 2, 29);
+    const targetDate = new Date(2025, 7, 26);
     const countdownElement = document.querySelector('.count-down p');
 
     function updateCountdown() {
@@ -57,17 +59,46 @@ document.addEventListener('DOMContentLoaded', function () {
         const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
         // Update countdown display
-        countdownElement.textContent = 
+        countdownElement.innerHTML = 
             `${months} Month${months !== 1 ? 's' : ''} | ` +
-            `${days} DAYS | ` +
+            `${days} DAYS <span class="hidden lg:inline-block">|</span> ` +
+            `<br class="lg:hidden">` +
             `${hours} HOURS | ` +
             `${minutes} MIN | ` +
             `${seconds} SEC`;
     }
 
     // Initial call and set up interval
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+    if (countdownElement) {
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    }
+
+
+    let ssfjoin = document.querySelector('#ssfjoin');
+
+    var ssfjoinslider = new Swiper(ssfjoin, {
+      slidesPerView: 2,
+        spaceBetween: 180,
+        centeredSlides: true,
+        cssMode: true,
+        // width: 450,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                centeredSlides: false,
+                width: null,
+                spaceBetween: 30,
+                cssMode: false,
+          }
+      }
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    });
+    
+  
 
 
 
