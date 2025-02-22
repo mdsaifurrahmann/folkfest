@@ -31,7 +31,7 @@ header{
         }
 
         .nav-item.open{
-            @apply !opacity-100 lg:opacity-100 !-top-0 lg:-top-0;
+            @apply !opacity-100 lg:opacity-100 !-top-0 lg:-top-0 shadow;
         }
 
         .nav-link{
