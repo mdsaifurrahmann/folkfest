@@ -27,7 +27,7 @@ jobs:
           public \
           --include='*.html' --include='*.js' --include='*.css' --include='*.json' --include='*.ico' --include='*.png' --include='*.svg' --include='*.xml' --include='*.webmanifest' --include='*.txt' --include='*.webp' --include='*.jpg' --include='*.jpeg' --include='*.gif' --include='*.mp4' --include='*.webm' --include='*.ogv' --include='*.ogg' --include='*.mp3'
       - name: Store archive for distribution
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: app-build
           path: ${{github.sha}}.tar.gz
