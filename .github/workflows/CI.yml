@@ -89,7 +89,6 @@ jobs:
       - create-deployment-environment
       - prepare-release-on-server
       - active-release
-      - migrating-db
     steps:
       - name: Clean up server junk
         uses: appleboy/ssh-action@master
