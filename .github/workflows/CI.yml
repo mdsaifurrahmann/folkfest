@@ -21,11 +21,9 @@ jobs:
       - name: Create Deployment archive
         env:
           GITHUB_SHA: ${{ github.sha }}
-        run: tar -czf "${GITHUB_SHA}".tar.gz \
-          --exclude=*.git --exclude=node_modules * \
-          -C $GITHUB_WORKSPACE \
-          public \
-          --include='*.html' --include='*.js' --include='*.css' --include='*.json' --include='*.ico' --include='*.png' --include='*.svg' --include='*.xml' --include='*.webmanifest' --include='*.txt' --include='*.webp' --include='*.jpg' --include='*.jpeg' --include='*.gif' --include='*.mp4' --include='*.webm' --include='*.ogv' --include='*.ogg' --include='*.mp3'
+        run: |
+          find_cmd="find . -name '*.html' -not -path './.git/*' -not -path './node_modules/*' -not -path './public/*'"
+          tar -czf "${GITHUB_SHA}.tar.gz" public/ $(eval "$find_cmd")
       - name: Store archive for distribution
         uses: actions/upload-artifact@v4
         with:
