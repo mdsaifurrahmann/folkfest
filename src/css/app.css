@@ -6,10 +6,16 @@
     --font-aboreto: 'Aboreto', sans-serif;
     --color-primary: #FFC603;
     --color-secondary: #FF0000;
+    --color-offwhite: #F8F8F8;
 }
 
 .container{
     @apply mx-auto;
+}
+
+.feather {
+    width: 30px;
+    height: 30px;
 }
 
 body{
@@ -18,23 +24,58 @@ body{
 
 header{
     nav{
-        @apply lg:bg-primary w-full rounded-md block lg:flex justify-center flex-row items-center gap-5;
+        @apply lg:bg-primary w-full rounded-md block lg:flex justify-center flex-row items-center gap-5 h-0 lg:h-auto;
 
         .nav-item{
-            @apply bg-primary rounded-md lg:rounded-none lg:bg-none opacity-0 lg:opacity-100 relative -top-[100vh] lg:-top-0 text-center lg:text-inherit lg:!flex my-1 lg:my-0 transition-all lg:transition-none duration-700;
+            @apply bg-primary rounded-md lg:rounded-none lg:bg-none opacity-0 lg:opacity-100 relative -top-[100vh] lg:-top-0 text-center lg:text-inherit lg:!flex my-1 lg:my-0 transition-all lg:transition-none duration-700 z-20;
         }
 
-        .nav-item.opacity-100{
-            @apply !opacity-100 lg:opacity-100 !-top-0 lg:-top-0;
+        .nav-item.open{
+            @apply !opacity-100 lg:opacity-100 !-top-0 lg:-top-0 shadow;
         }
 
         .nav-link{
             @apply uppercase rounded-md lg:rounded-none py-4 px-2 block transition-all duration-200;
 
             &:hover{
-                @apply bg-secondary text-white;
+                @apply bg-white;
             }
         }
     }
     
+}
+
+/* Common CSS */
+.section-title{
+    @apply text-center text-[2.5rem] mb-8;
+}
+
+.btn-1{
+    @apply bg-primary text-[15px] rounded-lg py-2 px-6;
+}
+
+
+/* SECTION JOIN US */
+.join-us{
+    @apply absolute left-0 -top-20 w-full;
+
+    .swiper-slide{
+        @apply flex flex-col items-center justify-center;
+    }
+
+    .title{
+        @apply text-center text-[28px];
+    }
+
+    .card{
+        @apply bg-primary h-[290px] text-xl p-4 lg:p-6 rounded-lg w-[264px] lg:w-full flex flex-col justify-between break-words;
+    }
+}
+
+footer{
+        background: rgb(255, 198, 3);
+            background: -moz-linear-gradient(0deg, rgba(255, 198, 3, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(255, 198, 3, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: linear-gradient(0deg, rgba(255, 198, 3, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc603", endColorstr="#ffffff", GradientType=1);
 }
