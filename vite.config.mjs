@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       input: glob.sync("src/js/*.js"), // Specify the JS entry point
       output: {
-        entryFileNames: "js/app.js", // Output JS as public/js/app.js
+        entryFileNames: "js/[name].js", // Output JS as public/js/app.js
         chunkFileNames: "js/[name].js", // Output any additional JS chunks
         assetFileNames: ({ name }) => {
           if (name && name.endsWith(".css")) {

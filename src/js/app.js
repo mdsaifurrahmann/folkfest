@@ -1,3 +1,6 @@
+import '../css/app.css';
+
+
 document.addEventListener("DOMContentLoaded", function () {
   let menu = document.querySelector(".menu");
   let menuItems = document.querySelectorAll(".nav-item");

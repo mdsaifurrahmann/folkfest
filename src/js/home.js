@@ -1,20 +1,17 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
+import '../css/home.css';
 
 document.addEventListener("DOMContentLoaded", () => {
-  let sffhome = document.querySelector("#sffhome");
+  const sffhome = document.querySelector("#sffhome");
 
   if (sffhome) {
     const sffhomeslider = new Swiper(sffhome, {
-      slidesPerView: 1,
-      navigation: false,
+      slidesPerView: 2,
       breakpoints: {
         1280: {
           slidesPerView: 1,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+          
         },
       },
       pagination: {
