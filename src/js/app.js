@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    let ssfjoin = document.querySelector('#ssfjoin');
+    let sffjoin = document.querySelector('#sffjoin');
 
-    var ssfjoinslider = new Swiper(ssfjoin, {
+    var sffjoinslider = new Swiper(sffjoin, {
       slidesPerView: 2,
         spaceBetween: 180,
         centeredSlides: true,
