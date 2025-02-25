@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 width: null,
                 spaceBetween: 30,
                 cssMode: false,
-          }
+            }
       }
     //   pagination: {
     //     el: ".swiper-pagination",
