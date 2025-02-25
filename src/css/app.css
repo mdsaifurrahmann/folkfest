@@ -7,10 +7,12 @@
     --color-primary: #FFC603;
     --color-secondary: #FF0000;
     --color-offwhite: #F8F8F8;
+    --min-h-68: 17rem;
+    --min-h-69: 17.25rem;
 }
 
 .container{
-    @apply mx-auto w-[95%] md:w-full lg:w-[90%] xl:w-[70%] 2xl:w-[56%];
+    @apply mx-auto !w-[95%] md:!w-full lg:!w-[90%] xl:!w-[70%] 2xl:!w-[56%];
 }
 
 .feather {

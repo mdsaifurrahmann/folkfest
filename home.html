@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scarborough Folk Fest</title>
     <!-- HTML Meta Tags -->
-    <title>Scarborough Folk Fest</title>
+    <title>Home | Scarborough Folk Fest</title>
     <meta name="description"
         content="The euphony of folk music from all different parts of the globe united in the city celebrated for its multiculturalism - Scarborough. Scarborough Folk Fest was a celebration of the sheer musical magnificence that is folk music - in all its myriad forms and variations.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://scarboroughfolkfest.com/ssf.html">
+    <meta property="og:url" content="https://scarboroughfolkfest.com/sff.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Scarborough Folk Fest">
     <meta property="og:description"
@@ -22,26 +21,25 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="scarboroughfolkfest.com">
-    <meta property="twitter:url" content="https://scarboroughfolkfest.com/ssf.html">
+    <meta property="twitter:url" content="https://scarboroughfolkfest.com/sff.html">
     <meta name="twitter:title" content="Scarborough Folk Fest">
     <meta name="twitter:description"
         content="The euphony of folk music from all different parts of the globe united in the city celebrated for its multiculturalism - Scarborough. Scarborough Folk Fest was a celebration of the sheer musical magnificence that is folk music - in all its myriad forms and variations.">
     <meta name="twitter:image"
         content="https://opengraph.b-cdn.net/production/images/e969f17b-d762-4921-a75b-f97985ab2101.png?token=lc5LnSI35Id6QTpHvqQwVvVE4tX4HUgP53Jybik8850&height=147&width=306&expires=33275679988">
 
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./src/css/app.css">
+    <link rel="stylesheet" href="./src/css/home.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" async></script>
 </head>
 
 <body>
-    <header class="z-10">
+    <header class="z-50 min-h-69">
         <div class="h-4 w-full lg:h-0 lg:w-0 lg:hidden z-40 bg-white relative"></div>
-        <div class="container w-[95%] md:w-full lg:w-[90%] xl:w-[70%] 2xl:w-[56%]">
+        <div class="container">
             <div class="flex flex-col items-center justify-center">
                 <div class="logo">
                     <a href="/"><img src="./public/images/logo/ssf.svg" alt="Scarborough Folk Fest"
@@ -77,45 +75,46 @@
         </div>
     </header>
 
-    <section class="my-22 mt-60 min-h-[40vh]">
 
-        <div class="relative">
-            <div class="">
-                <img loading="lazy" src="./public/images/line-graph.png" alt="" class="w-full">
-            </div>
-            <div class="join-us">
-                <div class="container w-[95%] md:w-full lg:w-[90%] xl:w-[70%] 2xl:w-[56%] mt-4 lg:mt-0 mb-20 mx-auto">
-                    <div class="grid grid-cols-1">
-                        <div class="mt-10">
-                            <h3 class="title py-4">Coming Soon</h3>
-                            <div class="card !w-full !h-auto">
-                                <p class="leading-[1.2] text-[17px] text-center">
-                                    We are currently redesigning our website to provide you with an improved, more
-                                    immersive experience celebrating music, culture, and community.
-                                    <br>
-                                    Stay tuned for updates as we unveil our new look.
-                                </p>
 
-                                <p class="leading-[1.2] text-[17px] text-center mt-4">For inquiries, please contact us
-                                    at <span class="border-b border-dashed"><a
-                                            href="mailto:caparampara@gmail.com">caparampara@gmail.com</a></span> or call
-                                    us at <span class="border-b border-dashed"><a href="tel:647 780 0785">647 780
-                                            0785</a>.</span> <br>
-                                    We look forward to hearing from you!</p>
 
-                            </div>
-                        </div>
-                    </div>
+    <section class="">
+
+        <div class="container relative">
+            <div class="swiper" id="sffhome">
+
+                <!-- <div class="container"> -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
                 </div>
+                <!-- </div> -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
             </div>
+            
         </div>
+
     </section>
+
+
+
 
     <footer class="w-full h-40 relative text-center">
         <p class="flex justify-center items-center absolute bottom-8 text-center w-full text-sm">© All right reserved by
             PARAMPARA CANADA | SCARBOROUGH FOLK FESTIVAL</p>
     </footer>
-    <script src="./public/js/app.js"></script>
+
+    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="./src/js/home.js"></script>
 </body>
 
 </html>
