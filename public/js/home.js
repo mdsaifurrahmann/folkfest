@@ -1,1 +1,1 @@
-import{S as i}from"./swiper-bundle.js";document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#sffhome");e&&new i(e,{slidesPerView:2,breakpoints:{1280:{slidesPerView:1}},pagination:{el:".swiper-pagination",clickable:!0}})});
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#sffhome");e&&new Swiper(e,{slidesPerView:2,breakpoints:{1280:{slidesPerView:1}},pagination:{el:".swiper-pagination",clickable:!0}})});

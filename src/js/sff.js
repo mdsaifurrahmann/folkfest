@@ -1,5 +1,5 @@
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
+// import Swiper from "swiper/bundle";
+// import "swiper/css/bundle";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Set the target date to July 26, 2025 at 00:00:00
