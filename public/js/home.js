@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#sffhome");e&&new Swiper(e,{slidesPerView:2,breakpoints:{1280:{slidesPerView:1}},pagination:{el:".swiper-pagination",clickable:!0}})});
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#sffhome");e&&new Swiper(e,{slidesPerView:1,loop:!0,effect:"fade",speed:1500,fadeEffect:{crossFade:!0},autoplay:{delay:3e3,pauseOnMouseEnter:!0},navigation:{nextEl:".button-next",prevEl:".button-prev"},pagination:{el:".swiper-pagination",clickable:!0}})});
