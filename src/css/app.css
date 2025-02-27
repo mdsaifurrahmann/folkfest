@@ -7,8 +7,11 @@
     --color-primary: #FFC603;
     --color-secondary: #FF0000;
     --color-offwhite: #F8F8F8;
+    --min-h-66: 16rem;
     --min-h-68: 17rem;
     --min-h-69: 17.25rem;
+    --breakpoint-3xl: 112rem;
+    --breakpoint-4xl: 128rem;
 }
 
 .container{
@@ -48,7 +51,7 @@ header{
 
 /* Common CSS */
 .section-title{
-    @apply text-center text-[2.5rem] mb-8;
+    @apply text-center text-[2rem] mb-8;
 }
 
 .btn-1{

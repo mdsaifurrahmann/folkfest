@@ -1,5 +1,4 @@
-import '../css/app.css';
-
+import "../css/app.css";
 
 document.addEventListener("DOMContentLoaded", function () {
   let menu = document.querySelector(".menu");
