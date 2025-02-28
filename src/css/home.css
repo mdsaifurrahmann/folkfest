@@ -1,24 +1,29 @@
 @reference "./app.css";
 
+
+.hero{
 .swiper-navigation-container {
-  @apply hidden opacity-0 invisible xl:flex xl:opacity-100 xl:visible justify-between absolute bottom-2/4 w-full z-10;
-}
+    @apply hidden opacity-0 invisible xl:flex xl:opacity-100 xl:visible justify-between absolute bottom-2/4 w-full z-10;
+  }
 
-.swiper-pagination-bullet-active {
-  @apply !bg-primary;
-}
+  .swiper-pagination-bullet-active {
+    @apply !bg-primary;
+  }
 
-.swiper-pagination-bullet {
-  @apply opacity-100 h-1.5 w-1.5 !mx-0.5;
-}
+  .swiper-pagination-bullet {
+    @apply opacity-100 h-1.5 w-1.5 !mx-0.5;
+  }
 
-.swiper-slide {
-  @apply !rounded-xl min-h-56 lg:h-[600px];
+  .swiper-slide {
+    @apply !rounded-xl min-h-56 lg:h-[600px];
 
-  img {
-    @apply !rounded-xl h-full w-full object-cover;
+    img {
+      @apply !rounded-xl h-full w-full object-cover;
+    }
   }
 }
+
+
 
 .root {
 
@@ -41,6 +46,16 @@
     }
   }
 }
+
+.why{
+  .after{
+    &::after{
+      content: '';
+      @apply w-full h-[3px] bg-white relative block bottom-9.5 mx-auto rounded-full;
+    }
+  }
+}
+
 
 @media (max-width: 1024px) {
     .root{
