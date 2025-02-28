@@ -29,8 +29,8 @@
         content="https://opengraph.b-cdn.net/production/images/e969f17b-d762-4921-a75b-f97985ab2101.png?token=lc5LnSI35Id6QTpHvqQwVvVE4tX4HUgP53Jybik8850&height=147&width=306&expires=33275679988">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" async />
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./public/css/home.css">
+    <link rel="stylesheet" href="./src/css/app.css">
+    <link rel="stylesheet" href="./src/css/home.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" async></script>
@@ -126,7 +126,7 @@
         </div>
     </div>
 
-    <section class="root bg-no-repeat min-h-[700px] lg:min-h-[800px]"
+    <section class="root bg-no-repeat min-h-[700px] lg:min-h-[800px] 6xl:min-h-[1000px]"
         style="background-image: url('./public/images/home/root.svg');">
         <div class="container">
             <h2 class="w-4/6 md:w-2/6 lg:w-2/6 2xl:w-1/4 4xl:w-1/6 mx-auto section-title root-title">
@@ -159,10 +159,10 @@
         </div>
     </section>
 
-    <section class="mt-40 relative min-h-[450px]">
+    <section class="mt-40 relative min-h-[450px] 5xl:min-h-[700px]">
         <div class="relative">
             <img src="./public/images/home/support-wave.svg" alt="wave" loading="lazy"
-                class="hidden xl:block w-full -z-10 absolute -top-[6rem] xl:-top-[7.6rem] 5xl:-top-[12rem]">
+                class="hidden xl:block w-full -z-10 absolute -top-[6rem] xl:-top-[7.6rem] 5xl:-top-[12rem] 6xl:-top-[16rem]">
             <img src="./public/images/home/support-wave-2.svg" alt="wave" loading="lazy"
                 class="block xl:hidden w-full -z-10 absolute -top-[2rem] md:-top-[7.5rem] transform">
             <h2 class="mx-auto section-title container">
@@ -171,18 +171,19 @@
         </div>
 
         <div class="container">
-            <div class="flex flex-col justify-center items-center gap-12 mt-14">
-                <img src="./public/images/home/sponsors-01.png" alt="sponsors" class="w-full block" loading="lazy">
+            <div class="flex flex-col justify-center items-center gap-12 mt-14 6xl:mt-20">
+                <img src="./public/images/home/sponsors-01.png" alt="sponsors" class="w-full block mix-blend-multiply"
+                    loading="lazy">
                 <div class="flex justify-around items-center w-full md:w-8/12">
                     <div class="flex flex-col justify-center items-center gap-px">
                         <h5 class="text-[12px] md:text-[14px]">event partner</h5>
-                        <img src="./public/images/home/e-partner.png" alt="event partner" class="w-[100px] md:w-[165px]"
+                        <img src="./public/images/home/e-partner.png" alt="event partner" class="w-[80px] md:w-[150px]"
                             loading="lazy">
                     </div>
                     <div class="flex flex-col justify-center items-center gap-px">
                         <h5 class="text-[12px] md:text-[14px]">creative partner</h5>
                         <img src="./public/images/home/c-partnet.png" alt="creative partner"
-                            class="w-[100px] md:w-[165px]" loading="lazy">
+                            class="w-[80px] md:w-[150px]" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -190,18 +191,19 @@
     </section>
 
 
-    <section class="min-h-[1000px] overflow-hidden relative why">
+    <section class="min-h-[1100px] overflow-hidden relative why">
         <div class="container z-10">
             <h2 class="section-title">why Scarborough?</h2>
             <div class="flex justify-center items-center">
-                <div class="relative">
-                    <div class="h-[568px] w-[590px] border-3 border-primary rounded-xl overflow-hidden">
+                <div class="md:relative flex justify-center items-center flex-col">
+                    <div
+                        class="h-[90%] w-[90%] mx-auto lg:h-[568px] lg:w-[590px] border-3 border-primary rounded-xl overflow-hidden">
                         <img src="./public/images/home/map.jpg" alt="map" loading="lazy"
                             class="w-full h-full object-cover">
                     </div>
                     <div
-                        class="absolute w-[285px] min-h-[327px] bg-primary text-right p-8 rounded-xl -right-[5.5rem] -bottom-[13rem] break-words overflow-hidden shadow-md">
-                        <div class="after">
+                        class="relative bottom-[4rem] md:absolute w-[285px] min-h-[327px] bg-primary lg:text-right p-8 rounded-xl  md:right-[5rem] lg:right-[2rem] md:-bottom-[5.5rem]  xl:-right-[5.5rem] xl:-bottom-[13rem] shadow-md">
+                        <div class="after break-words overflow-hidden">
                             <p class="relative z-10">Scarborough is a vibrant hub of cultural diversity, natural beauty,
                                 and
                                 community
@@ -211,14 +213,16 @@
                                 perfect backdrop to celebrate art, music, and togetherness at the Scarborough Folk
                                 Festival.</p>
                         </div>
+
+                        <img src="./public/images/home/root-02.svg" alt="root-02" loading="lazy"
+                            class="absolute translate scale-[1.35] -z-10 -bottom-[6rem] -right-[0.5rem] lg:scale-[2] lg:-bottom-[9rem] lg:-right-[4.5rem]">
                     </div>
-                    <img src="./public/images/home/root-02.svg" alt="root-02" loading="lazy"
-                        class="absolute -z-10 -right-[18rem] -bottom-[23rem]">
+
                 </div>
             </div>
         </div>
-        <img src="./public/images/home/wave-3.svg" alt="wave-3" class="w-full absolute -z-10 bottom-[22rem]"
-            loading="lazy">
+        <img src="./public/images/home/wave-3.svg" alt="wave-3"
+            class="hidden lg:block w-full absolute -z-10 bottom-[22rem]" loading="lazy">
     </section>
 
 
@@ -302,8 +306,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./public/js/app.js"></script>
-    <script type="module" src="./public/js/home.js"></script>
+    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="./src/js/home.js"></script>
 </body>
 
 </html>
