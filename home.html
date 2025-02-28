@@ -29,8 +29,8 @@
         content="https://opengraph.b-cdn.net/production/images/e969f17b-d762-4921-a75b-f97985ab2101.png?token=lc5LnSI35Id6QTpHvqQwVvVE4tX4HUgP53Jybik8850&height=147&width=306&expires=33275679988">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" async />
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./public/css/home.css">
+    <link rel="stylesheet" href="./src/css/app.css">
+    <link rel="stylesheet" href="./src/css/home.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" async></script>
@@ -129,7 +129,8 @@
         </div>
     </div>
 
-    <section class="root bg-[url(./public/images/home/root.svg)] bg-no-repeat min-h-[700px] lg:min-h-[800px]">
+    <section class="root bg-no-repeat min-h-[700px] lg:min-h-[800px]"
+        style="background-image: url('./public/images/home/root.svg');">
         <div class="container">
             <h2 class="w-4/6 md:w-2/6 lg:w-2/6 2xl:w-1/4 4xl:w-1/6 mx-auto section-title root-title">
                 connecting roots
@@ -165,15 +166,16 @@
 
         <div class="relative">
             <img src="./public/images/home/support-wave.svg" alt="wave" loading="lazy"
-                class="hidden xl:block w-full -z-10 absolute -top-[6rem] 4xl:-top-[20rem]">
+                class="hidden xl:block w-full -z-10 absolute -top-[6rem] xl:-top-[7.6rem] 5xl:-top-[12rem]">
             <img src="./public/images/home/support-wave-2.svg" alt="wave" loading="lazy"
                 class="block xl:hidden w-full -z-10 absolute -top-[2rem] md:-top-[7.5rem] transform">
-        </div>
-
-        <div class="container">
             <h2 class="mx-auto section-title container">
                 supported by
             </h2>
+        </div>
+
+        <div class="container">
+
 
             <div class="flex flex-col justify-center items-center gap-12 mt-14">
                 <img src="./public/images/home/sponsors-01.png" alt="sponsors" class="w-full block" loading="lazy">
@@ -202,8 +204,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./public/js/app.js"></script>
-    <script type="module" src="./public/js/home.js"></script>
+    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="./src/js/home.js"></script>
 </body>
 
 </html>
