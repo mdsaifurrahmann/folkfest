@@ -57,6 +57,11 @@
 }
 
 
+.get-in-touch{
+  @apply my-12;
+  
+}
+
 @media (max-width: 1024px) {
     .root{
         background-position: 38% -2.5rem;

@@ -29,8 +29,8 @@
         content="https://opengraph.b-cdn.net/production/images/e969f17b-d762-4921-a75b-f97985ab2101.png?token=lc5LnSI35Id6QTpHvqQwVvVE4tX4HUgP53Jybik8850&height=147&width=306&expires=33275679988">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" async />
-    <link rel="stylesheet" href="./src/css/app.css">
-    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./public/css/home.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" async></script>
@@ -159,7 +159,7 @@
         </div>
     </section>
 
-    <section class="mt-40 relative min-h-[450px] 5xl:min-h-[700px]">
+    <section class="mt-34 md:mt-40 relative min-h-[400px] md:min-h-[450px] 5xl:min-h-[700px]">
         <div class="relative">
             <img src="./public/images/home/support-wave.svg" alt="wave" loading="lazy"
                 class="hidden xl:block w-full -z-10 absolute -top-[6rem] xl:-top-[7.6rem] 5xl:-top-[12rem] 6xl:-top-[16rem]">
@@ -191,7 +191,7 @@
     </section>
 
 
-    <section class="min-h-[1100px] overflow-hidden relative why">
+    <section class="min-h-[900px] md:min-h-[1000px] xl:min-h-[1100px] overflow-hidden relative why">
         <div class="container z-10">
             <h2 class="section-title">why Scarborough?</h2>
             <div class="flex justify-center items-center">
@@ -222,7 +222,7 @@
             </div>
         </div>
         <img src="./public/images/home/wave-3.svg" alt="wave-3"
-            class="hidden lg:block w-full absolute -z-10 bottom-[22rem]" loading="lazy">
+            class="hidden lg:block w-full absolute -z-10 lg:bottom-[40rem] xl:bottom-[24rem]" loading="lazy">
     </section>
 
 
@@ -300,14 +300,85 @@
     </section>
 
 
+    <section class="get-in-touch">
+        <div class="container">
+            <h2 class="section-title">get in touch</h2>
+            <div class="grid grid-cols-8 gap-4 w-9/10 lg:w-full mx-auto">
+                <div class="col-span-8 xl:col-span-5 border border-primary rounded-xl bg-offwhite p-6 w-full">
+                    <form action="javascript:void(0)" method="POST" class="flex flex-col relative">
+                        <label for="full_name">full name</label>
+                        <input type="text" autocomplete="true" autocapitalize="true"
+                            class="rounded-lg bg-darkwhite py-2 px-4 mb-2" name="full_name" id="full_name">
+
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" class="rounded-lg bg-darkwhite py-2 px-4 mb-2"
+                            autocapitalize="true" autocomplete="true">
+
+                        <label for="phone">phone</label>
+                        <input type="text" name="phone" id="phone" class="rounded-lg bg-darkwhite py-2 px-4 mb-2"
+                            autocapitalize="true" autocomplete="true">
+
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" class="rounded-lg bg-darkwhite py-2 px-4 mb-1"
+                            autocapitalize="true" rows="5"></textarea>
+
+                        <button
+                            class="absolute -bottom-[2.8rem] left-2/4 transform -translate-x-2/4 z-10 bg-primary rounded-md w-7/10 py-2 mt-4 cursor-pointer mx-auto"
+                            type="submit">send</button>
+                    </form>
+                </div>
+                <div class="col-span-8 xl:col-span-3 flex flex-col gap-4 mt-28 xl:mt-0">
+                    <h3 class="text-center text-[1.5rem]">contact</h3>
+                    <div class="bg-primary rounded-lg p-6 text-center break-words">
+                        <div class="mb-2">
+                            <h5 class="block">phone</h5>
+                            <span class="block text-[20px]">647-985-9694</span>
+                        </div>
+                        <div class="mb-2">
+                            <h5 class="block">email</h5>
+                            <span class="block text-[20px]">info@parampara.ca</span>
+                        </div>
+
+                        <div class="">
+                            <h5 class="block">location</h5>
+                            <span class="block text-[20px]">Scarborough, ON</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-28 xl:mt-auto">
+                        <h3 class="text-center text-[1.5rem] mb-4 xl:mb-auto">social</h3>
+                        <div
+                            class="bg-transparent md:border border-primary p-6 rounded-lg flex gap-12 items-center justify-center w-fit xl:w-full mx-auto">
+
+                            <a href="https://www.facebook.com/Scarboroughfolkfest" target="_blank">
+                                <img src="./public/images/social/fb.png" alt="facebook" />
+                            </a>
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="./public/images/social/linkdedin.png" alt="linkedin" />
+                            </a>
+                            <a href="https://www.instagram.com/explore/tags/scarboroughfolkfest/" target="_blank">
+                                <img src="./public/images/social/insta.png" alt="instagram" />
+                            </a>
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="./public/images/social/yt.png" alt="youtube" />
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="w-full h-40 relative text-center overflow-hidden min-h-[160px]">
         <p class="flex justify-center items-center absolute bottom-8 text-center w-full text-sm">© All right reserved by
             PARAMPARA CANADA | SCARBOROUGH FOLK FESTIVAL</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./src/js/app.js"></script>
-    <script type="module" src="./src/js/home.js"></script>
+    <script type="module" src="./public/js/app.js"></script>
+    <script type="module" src="./public/js/home.js"></script>
 </body>
 
 </html>
