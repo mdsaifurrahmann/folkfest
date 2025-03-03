@@ -6,6 +6,10 @@
 
     .author-img {
         @apply border-2 xl:border border-primary rounded-lg overflow-hidden drop-shadow-md w-[230px] h-fit;
+
+        img{
+            @apply grayscale;
+        }
     }
 
     .author-data {
