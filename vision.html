@@ -28,7 +28,7 @@
     <meta name="twitter:image"
         content="https://opengraph.b-cdn.net/production/images/e969f17b-d762-4921-a75b-f97985ab2101.png?token=lc5LnSI35Id6QTpHvqQwVvVE4tX4HUgP53Jybik8850&height=147&width=306&expires=33275679988">
 
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./src/css/app.css">
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
@@ -104,17 +104,24 @@
     <section class="my-22">
         <div class="container">
             <div class="flex justify-between items-center flex-col mb-12">
-                <h2 class="section-title !text-4xl">team's perspectives</h2>
+                <h2 class="section-title text-3xl lg:!text-4xl">team's perspectives</h2>
                 <i data-feather="more-horizontal"></i>
             </div>
 
             <div class="flex flex-col">
+
                 <div class="vision-author">
-                    <div class="author-img">
-                        <img src="./public/images/vision/author-1.jpg" alt="author" class="w-full grayscale"
-                            loading="lazy">
+                    <div class="relative xl:static w-[250px] xl:w-[230px] mx-auto xl:mx-0">
+                        <div class="author-img mx-auto">
+                            <img src="./public/images/vision/author-1.jpg" alt="author" class="w-full grayscale"
+                                loading="lazy">
+                        </div>
+                        <div
+                            class="xl:hidden bg-primary w-full h-[120px] absolute -bottom-[10px] rounded-xl left-0 -z-10">
+                        </div>
                     </div>
-                    <div class="w-full">
+
+                    <div class="author-data">
                         <div class="author-info">
                             <h3>anurag das</h3>
                             <p>creative director</p>
@@ -132,77 +139,17 @@
 
                 </div>
                 <div class="vision-author">
-                    <div class="author-img">
-                        <img src="./public/images/vision/author-2.jpg" alt="author" class="w-full grayscale"
-                            loading="lazy">
-                    </div>
-                    <div class="w-full">
-                        <div class="author-info">
-                            <h3>anurag das</h3>
-                            <p>creative director</p>
+                    <div class="relative xl:static w-[250px] xl:w-[230px] mx-auto xl:mx-0">
+                        <div class="author-img mx-auto">
+                            <img src="./public/images/vision/author-1.jpg" alt="author" class="w-full grayscale"
+                                loading="lazy">
                         </div>
-                        <p class="description">
-                            To create a world-class cultural festival that celebrates the rich diversity of Scarborough,
-                            fostering connections
-                            through music, art, and traditions from around the globe. Guided by Parampara Canada's
-                            mission of preserving and
-                            promoting heritage, we aim to inspire unity, nurture creativity, and build a vibrant,
-                            inclusive community where all
-                            cultures are celebrated and shared.
-                        </p>
+                        <div
+                            class="xl:hidden bg-primary w-full h-[120px] absolute -bottom-[10px] rounded-xl left-0 -z-10">
+                        </div>
                     </div>
 
-                </div>
-                <div class="vision-author">
-                    <div class="author-img">
-                        <img src="./public/images/vision/author-2.jpg" alt="author" class="w-full grayscale"
-                            loading="lazy">
-                    </div>
-                    <div class="w-full">
-                        <div class="author-info">
-                            <h3>anurag das</h3>
-                            <p>creative director</p>
-                        </div>
-                        <p class="description">
-                            To create a world-class cultural festival that celebrates the rich diversity of Scarborough,
-                            fostering connections
-                            through music, art, and traditions from around the globe. Guided by Parampara Canada's
-                            mission of preserving and
-                            promoting heritage, we aim to inspire unity, nurture creativity, and build a vibrant,
-                            inclusive community where all
-                            cultures are celebrated and shared.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="vision-author">
-                    <div class="author-img">
-                        <img src="./public/images/vision/author-2.jpg" alt="author" class="w-full grayscale"
-                            loading="lazy">
-                    </div>
-                    <div class="w-full">
-                        <div class="author-info">
-                            <h3>anurag das</h3>
-                            <p>creative director</p>
-                        </div>
-                        <p class="description">
-                            To create a world-class cultural festival that celebrates the rich diversity of Scarborough,
-                            fostering connections
-                            through music, art, and traditions from around the globe. Guided by Parampara Canada's
-                            mission of preserving and
-                            promoting heritage, we aim to inspire unity, nurture creativity, and build a vibrant,
-                            inclusive community where all
-                            cultures are celebrated and shared.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="vision-author">
-                    <div class="author-img">
-                        <img src="./public/images/vision/author-2.jpg" alt="author" class="w-full grayscale"
-                            loading="lazy">
-                    </div>
-                    <div class="w-full">
+                    <div class="author-data">
                         <div class="author-info">
                             <h3>anurag das</h3>
                             <p>creative director</p>
@@ -229,7 +176,7 @@
             PARAMPARA CANADA | SCARBOROUGH FOLK FESTIVAL</p>
     </footer>
 
-    <script type="module" src="./public/js/app.js"></script>
+    <script type="module" src="./src/js/app.js"></script>
 </body>
 
 </html>
