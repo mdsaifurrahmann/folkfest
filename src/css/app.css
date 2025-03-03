@@ -17,6 +17,10 @@
   --breakpoint-6xl: 176rem;
 }
 
+*{
+  @apply transition-all duration-200 scroll-smooth;
+}
+
 .container {
   @apply mx-auto !w-[95%] md:!w-full lg:!w-[90%] xl:!w-[70%] 2xl:!w-[56%];
 }
