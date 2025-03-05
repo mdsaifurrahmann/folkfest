@@ -17,12 +17,12 @@
   --breakpoint-6xl: 176rem;
 }
 
-*{
+* {
   @apply transition-all duration-200 scroll-smooth;
 }
 
 .container {
-  @apply mx-auto !w-[95%] md:!w-full lg:!w-[90%] xl:!w-[70%] 2xl:!w-[56%];
+  @apply mx-auto !w-[95%] md:!w-full lg:!w-[90%] xl:!w-[70%] 2xl:!w-[56%] 5xl:!w-[40%];
 }
 
 .feather {
@@ -58,7 +58,7 @@ header {
 
 /* Common CSS */
 .section-title {
-  @apply text-center text-[2rem] mb-8;
+  @apply text-center text-[2.3rem] mb-8;
 }
 
 .btn-1 {
@@ -69,20 +69,24 @@ header {
 .join-us {
   @apply absolute left-0 -top-20 w-full;
 
-  .swiper-slide {
-    @apply flex flex-col items-center justify-center;
+  .swiper-wrapper {
+    @apply lg:justify-center lg:items-center;
   }
 
-  .title {
-    @apply text-center text-[28px];
+  .swiper-slide {
+    @apply !w-[220px];
+
+    .title {
+      @apply text-center text-[26px] w-full;
+    }
   }
 
   .card {
-    @apply bg-primary h-[290px] text-xl p-4 lg:p-6 rounded-lg w-[264px] lg:w-full flex flex-col justify-between break-words;
+    @apply bg-primary h-[310px] text-xl p-4 lg:p-6 rounded-lg flex flex-col justify-between break-words;
   }
 }
 
-footer{
+footer {
   background: rgb(255, 198, 3);
   background: -moz-linear-gradient(
     0deg,

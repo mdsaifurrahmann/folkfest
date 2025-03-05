@@ -58,17 +58,21 @@ document.addEventListener("DOMContentLoaded", () => {
   if (sffjoin) {
     const sffjoinslider = new Swiper(sffjoin, {
       slidesPerView: 2,
-      spaceBetween: 180,
+      spaceBetween: 60,
       centeredSlides: true,
       cssMode: true,
       // width: 450,
       breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
         1024: {
           slidesPerView: 4,
           centeredSlides: false,
-          width: null,
           spaceBetween: 30,
-          cssMode: false,
         },
       },
     });

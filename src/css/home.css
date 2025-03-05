@@ -38,7 +38,7 @@
         }
     
   .root-title {
-    @apply relative text-[2rem];
+    @apply relative text-[2.3rem];
 
     &::after {
       content: "";
@@ -48,17 +48,17 @@
 }
 
 .why{
-  .after{
+  /* .after{
     &::after{
       content: '';
       @apply w-full h-[3px] bg-white relative block bottom-9.5 mx-auto rounded-full;
     }
-  }
+  } */
 }
 
 
 .get-in-touch{
-  @apply my-12;
+  @apply my-22;
   
 }
 

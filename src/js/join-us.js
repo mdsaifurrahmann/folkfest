@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         1024: {
           slidesPerView: 4,
-          centeredSlides: false,
-          cssMode: true,
+          centeredSlides: false
         },
       },
     });
